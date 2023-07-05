@@ -5,15 +5,15 @@ import { FaEllipsisV, FaFacebook, FaInstagram, FaSearch, FaTwitter, FaYoutube } 
 
 export default function Navbar() {
     return (
-        <nav className='flex flex-wrap justify-around items-center py-5 md:justify-between md:flex-wrap'>
+        <nav className='flex bg-transparent flex-wrap justify-around items-center py-5 md:justify-between md:flex-wrap'>
             <div>
                 <NavLink>
                     <img src={logo} alt='logo' width={'50%'} />
                 </NavLink>
             </div>
             <div className='md:flex md:flex-wrap md:justify-between text-[10px] md:gap-5 font-bold hidden md:block '>
-                <NavLink>HOME</NavLink>
-                <NavLink>ABOUT US</NavLink>
+                <NavLink to='/'>HOME</NavLink>
+                <NavLink to='/about'>ABOUT US</NavLink>
                 <NavLink>CLASSES</NavLink>
                 <NavLink>SERVICES</NavLink>
                 <NavLink>OUR TEAM</NavLink>
