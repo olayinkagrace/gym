@@ -10,6 +10,7 @@ import Home from './screens/Home'
 import About from './About'
 import Layout from './components/Layout';
 import Classes from './screens/Classes';
+import Services from './screens/Services';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='classes' element={<Classes />} />
+        <Route path='services' element={<Services />} />
       </Route>
     )
   );
