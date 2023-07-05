@@ -14,7 +14,7 @@ export default function Navbar() {
             <div className='md:flex md:flex-wrap md:justify-between text-[10px] md:gap-5 font-bold hidden md:block '>
                 <NavLink to='/'>HOME</NavLink>
                 <NavLink to='/about'>ABOUT US</NavLink>
-                <NavLink>CLASSES</NavLink>
+                <NavLink to='/classes'>CLASSES</NavLink>
                 <NavLink>SERVICES</NavLink>
                 <NavLink>OUR TEAM</NavLink>
                 <NavLink>PAGES</NavLink>

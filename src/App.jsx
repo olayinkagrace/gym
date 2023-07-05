@@ -9,6 +9,7 @@ import {
 import Home from './screens/Home'
 import About from './About'
 import Layout from './components/Layout';
+import Classes from './screens/Classes';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
+        <Route path='classes' element={<Classes />} />
       </Route>
     )
   );
