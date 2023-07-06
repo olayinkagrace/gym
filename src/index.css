@@ -1,0 +1,23 @@
+
+
+@media screen and (max-width: 652px) {
+     .nav{display: none;}
+
+  }
+
+  @media screen and (max-width: 280px) {
+    .ftp{display: none}
+    .img{margin: 5px;}
+   
+ }
+
+  @media screen and (max-width: 240px) {
+    .bigText{font-size:large}
+    .bigFont{font-size: large;}
+    .ft{font-size: 8px;}
+ }
+ @media screen and (max-width: 150px) {
+    .bigFont{font-size:small;}
+    .btn{font-size: small;}
+ }
+

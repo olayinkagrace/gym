@@ -1,14 +1,16 @@
-import React from 'react'
 import { FaAngleRight, FaFacebook, FaInbox, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import background from '../assets/images/gallery-5.jpg'
 import background2 from '../assets/images/gallery-2.jpg'
+import Navbar from '../components/Navbar'
 
 export default function Classes() {
   return (
     <main className='text-slate-50'>
-      <section className='text-center bg-cover bg-transparent py-32  items-center' style={{ backgroundImage: `url(${background})` }}>
-        <h1 className='font-extrabold text-3xl uppercase py-3'>CLASSES DETAIL</h1>
+      <section className='text-center bg-cover bg-transparent pt-3  items-center' style={{ backgroundImage: `url(${background})` }}>
+        <Navbar />
+        <div className='py-28'>
+        <h1 className='font-extrabold text-3xl py-3'>CLASSES DETAIL</h1>
         <div className='flex flex-wrap justify-center items-center font-bold text-[12px]'>
           <Link className='pe-1' to='/'>Home</Link>
           <FaAngleRight size='8px' />
@@ -16,21 +18,22 @@ export default function Classes() {
           <FaAngleRight size='8px' />
           <p className='text-orange-600 ps-1'>Body Building</p>
         </div>
+        </div>
       </section>
-      <section className='grid grid-cols-3 bg-neutral-900 px-20 pt-20 pb-10 gap-8' >
+      <section className='grid sm:grid-cols-3 bg-neutral-900 px-20 pt-20 pb-10 gap-8' >
         <div className='col-span-2'>
           <img src="https://themewagon.github.io/gymlife/img/classes/class-details/class-detailsl.jpg" alt="woman" />
           <h1 className='font-bold pt-4 text-lg'>BODY BUIDING</h1>
           <p className='text-[10px] py-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua accusantium doloremque laudantium. Excepteur sint occaecat cupidatat non proident sculpa.</p>
           <h1 className='font-bold text-lg '>TRAINER</h1>
           <p className='text-[10px] py-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua accusantium doloremque laudantium. Excepteur sint occaecat cupidatat non proident sculpa.</p>
-          <div className='grid grid-cols-2 py-3 gap-4'>
+          <div className='grid sm:grid-cols-2 py-3 gap-4'>
             <img src="https://themewagon.github.io/gymlife/img/classes/class-details/trainer-profile.jpg" alt="exercuse" />
             <div>
               <p className='font-bold'>Athart Rachel</p>
-              <div className='grid grid-cols-2 py-1'>
+              <div className='grid sm:grid-cols-2 py-1'>
                 <p className='text-[10px] text-zinc-500'>GYM TRAINER</p>
-                <div className='flex flex-wrap justify-between w-20'>
+                <div className='flex flex-wrap flex-1 justify-between w-20'>
                   <FaFacebook size='10px' color='grey' />
                   <FaTwitter size='10px' color='grey' />
                   <FaYoutube size='10px' color='grey' />

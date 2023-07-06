@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <main className='text-slate-50'>
             <section className='bg-zinc-900 px-20 py-5 flex flex-wrap justify-between'>
-                <div className='flex flex-wrap items-center'>
+                <div className='flex flex-wrap items-center py-2'>
                     <div className=' flex w-10 me-3  h-10 bg-orange-600 rounded-full justify-center'>
                         <FaMap className='self-center' />
                     </div>
@@ -14,23 +14,23 @@ export default function Footer() {
                         <p className='text-[10px]'>NH 03461</p>
                     </div>
                 </div>
-                <div className='flex flex-wrap items-center'>
+                <div className='flex flex-wrap items-center py-2'>
                     <div className=' flex w-10 me-3  h-10 bg-orange-600 rounded-full justify-center'>
                         <FaPhone className='self-center' />
                     </div>
                     <p className='text-[10px]'>125-711-811 125-668-886</p>
                 </div>
-                <div className='flex flex-wrap items-center'>
+                <div className='flex flex-wrap items-center py-2'>
                     <div className=' flex w-10 me-3  h-10 bg-orange-600 rounded-full justify-center'>
                         <FaInbox className='self-center' />
                     </div>
-                    <p className='text-[10px]'>Support.gymcenter@gmail.com</p>
+                    <p className='text-[10px] ft'>Support.gymcenter@gmail.com</p>
                 </div>
             </section>
             <section className='bg-black flex flex-wrap justify-between text-[10px] px-20 py-10'>
                 <div className='py-2'>
-                    <img src={logo} alt="logo" width={'50%'} />
-                    <p className='text-[10px] w-48 my-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua endisse ultrices gravida lorem.</p>
+                    <img src={logo} alt="logo" width={'50%'} className='img' />
+                    <p className='text-[10px] w-48 my-3 ftp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua endisse ultrices gravida lorem.</p>
                     <div className='flex flex-wrap justify-between w-20'>
                         <FaFacebook />
                         <FaTwitter />

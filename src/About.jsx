@@ -5,29 +5,34 @@ import { Link } from 'react-router-dom'
 import { FaAngleRight, FaShoePrints } from 'react-icons/fa'
 import WhyChooseUs from './components/WhyChooseUs'
 import Video from './components/Video'
+import Navbar from './components/Navbar'
 
 export default function About() {
   return (
     <main className='text-slate-50'>
-      <section className='text-center bg-cover bg-transparent py-32  items-center' style={{ backgroundImage: `url(${background})` }}>
-        <h1 className='font-extrabold text-3xl uppercase py-3'>About Us</h1>
+      <section className='text-center bg-cover bg-transparent pt-3  ' style={{ backgroundImage: `url(${background})` }}>
+      <Navbar />
+      <div className='py-28'>
+      <h1 className='font-extrabold text-3xl uppercase'>About Us</h1>
         <div className='flex flex-wrap justify-center items-center font-bold text-[12px]'>
           <Link className='pe-1' to='/'>Home</Link>
           <FaAngleRight size='8px' />
           <p className='text-orange-600 ps-1'>About</p>
         </div>
+      </div>
+       
       </section>
       <section className='bg-black text-center py-20'>
         <p className='text-orange-500 text-xs font-semibold'>Why choose us?</p>
         <h1 className='font-bold text-lg pb-5 pt-2'>PUSH YOUR LIMIT FORWARD</h1>
-        <div className='grid grid-cols-4 gap-4 px-10'>
+        <div className='grid sm:grid-cols-4 gap-4 px-10'>
           <WhyChooseUs icon={<FaShoePrints />} name={"Modern Equipment"} description={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!'} />
           <WhyChooseUs icon={FaShoePrints} name={"Healthy nutrition plan"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
           <WhyChooseUs icon={FaShoePrints} name={"Proffesponal training plan"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
           <WhyChooseUs icon={FaShoePrints} name={"Unique to your needs"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
         </div>
       </section>
-      <section className='bg-zinc-900 grid grid-cols-2'>
+      <section className='bg-zinc-900 grid sm:grid-cols-2'>
         <div>
           <Video />
         </div>
