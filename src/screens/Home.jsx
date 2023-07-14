@@ -1,7 +1,6 @@
-import React from 'react'
+
 import Navbar from '../components/Navbar'
-import WhyChooseUs from '../components/WhyChooseUs'
-import { FaAngleRight, FaShoePrints } from 'react-icons/fa'
+import { FaAngleRight, FaNutritionix, FaShoePrints, FaTrain, FaWeight } from 'react-icons/fa'
 import class1 from '../assets/images/class-1.jpg'
 import class2 from '../assets/images/class-2.jpg'
 import class3 from '../assets/images/class-3.jpg'
@@ -13,7 +12,6 @@ import gallery3 from '../assets/images/gallery-3.jpg'
 import gallery4 from '../assets/images/gallery-4.jpg'
 import gallery5 from '../assets/images/gallery-5.jpg'
 import gallery6 from '../assets/images/gallery-6.jpg'
-import background from '../assets/images/gallery-4.jpg'
 export default function Home() {
     return (
         <main className='text-slate-50'>
@@ -29,10 +27,34 @@ export default function Home() {
                 <p className='text-orange-500 text-xs font-semibold pt-14'>Why choose us?</p>
                 <h1 className='font-bold text-lg pb-5'>PUSH YOUR LIMIT FORWARD</h1>
                 <div className='grid sm:grid-cols-4 gap-4 px-10'>
-                    <WhyChooseUs icon={<FaShoePrints />} name={"Modern Equipment"} description={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!'} />
-                    <WhyChooseUs icon={FaShoePrints} name={"Healthy nutrition plan"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
-                    <WhyChooseUs icon={FaShoePrints} name={"Proffesponal training plan"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
-                    <WhyChooseUs icon={FaShoePrints} name={"Unique to your needs"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
+                    <div className='grid justify-items-center'>
+                        <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+                        <FaShoePrints className='self-center' />
+                        </div>
+                        <p className='font-bold text-sm py-2 '>Modern Equipment</p>
+                        <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+                </div>
+                <div className='grid justify-items-center'>
+                        <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+                        <FaNutritionix className='self-center' />
+                        </div>
+                        <p className='font-bold text-sm py-2 '>Healthy nutrition plan</p>
+                        <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+                </div>
+                <div className='grid justify-items-center'>
+                        <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+                        <FaTrain className='self-center' />
+                        </div>
+                        <p className='font-bold text-sm py-2 '>Proffesponal training plan</p>
+                        <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+                </div>
+                <div className='grid justify-items-center'>
+                        <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+                        <FaWeight className='self-center' />
+                        </div>
+                        <p className='font-bold text-sm py-2 '>Unique to your needs</p>
+                        <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+                </div>
                 </div>
             </section>
             <section className='bg-zinc-900 text-center py-20 uppercase'>

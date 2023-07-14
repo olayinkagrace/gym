@@ -1,9 +1,7 @@
-import React from 'react'
 import background from './assets/images/gallery-5.jpg'
 import background2 from './assets/images/gallery-6.jpg'
 import { Link } from 'react-router-dom'
-import { FaAngleRight, FaShoePrints } from 'react-icons/fa'
-import WhyChooseUs from './components/WhyChooseUs'
+import { FaAngleRight, FaNutritionix, FaShoePrints, FaTrain, FaWeight } from 'react-icons/fa'
 import Video from './components/Video'
 import Navbar from './components/Navbar'
 
@@ -11,25 +9,49 @@ export default function About() {
   return (
     <main className='text-slate-50'>
       <section className='text-center bg-cover bg-transparent pt-3  ' style={{ backgroundImage: `url(${background})` }}>
-      <Navbar />
-      <div className='py-28'>
-      <h1 className='font-extrabold text-3xl uppercase'>About Us</h1>
-        <div className='flex flex-wrap justify-center items-center font-bold text-[12px]'>
-          <Link className='pe-1' to='/'>Home</Link>
-          <FaAngleRight size='8px' />
-          <p className='text-orange-600 ps-1'>About</p>
+        <Navbar />
+        <div className='py-28'>
+          <h1 className='font-extrabold text-3xl uppercase'>About Us</h1>
+          <div className='flex flex-wrap justify-center items-center font-bold text-[12px]'>
+            <Link className='pe-1' to='/'>Home</Link>
+            <FaAngleRight size='8px' />
+            <p className='text-orange-600 ps-1'>About</p>
+          </div>
         </div>
-      </div>
-       
+
       </section>
       <section className='bg-black text-center py-20'>
         <p className='text-orange-500 text-xs font-semibold'>Why choose us?</p>
         <h1 className='font-bold text-lg pb-5 pt-2'>PUSH YOUR LIMIT FORWARD</h1>
         <div className='grid sm:grid-cols-4 gap-4 px-10'>
-          <WhyChooseUs icon={<FaShoePrints />} name={"Modern Equipment"} description={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!'} />
-          <WhyChooseUs icon={FaShoePrints} name={"Healthy nutrition plan"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
-          <WhyChooseUs icon={FaShoePrints} name={"Proffesponal training plan"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
-          <WhyChooseUs icon={FaShoePrints} name={"Unique to your needs"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, molestiae provident inventore recusandae ipsa magni!"} />
+          <div className='grid justify-items-center'>
+            <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+              <FaShoePrints className='self-center' />
+            </div>
+            <p className='font-bold text-sm py-2 '>Modern Equipment</p>
+            <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+          </div>
+          <div className='grid justify-items-center'>
+            <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+              <FaNutritionix className='self-center' />
+            </div>
+            <p className='font-bold text-sm py-2 '>Healthy nutrition plan</p>
+            <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+          </div>
+          <div className='grid justify-items-center'>
+            <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+              <FaTrain className='self-center' />
+            </div>
+            <p className='font-bold text-sm py-2 '>Proffesponal training plan</p>
+            <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+          </div>
+          <div className='grid justify-items-center'>
+            <div className=' flex w-12 h-12 bg-slate-700 self-center hover:bg-orange-600 rounded-full justify-center'>
+              <FaWeight className='self-center' />
+            </div>
+            <p className='font-bold text-sm py-2 '>Unique to your needs</p>
+            <h1 className='font-thin text-[10px] text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit expedita delectus est cupiditate doloremque facilis eos magni id consequuntur quos!</h1>
+          </div>
         </div>
       </section>
       <section className='bg-zinc-900 grid sm:grid-cols-2'>
@@ -69,7 +91,7 @@ export default function About() {
         <button className='border border-orange-600 text-[12px] px-5 py-2 hover:bg-orange-600'>Appointment</button>
       </section>
       <section>
-        
+
       </section>
     </main>
   )

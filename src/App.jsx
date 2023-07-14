@@ -13,6 +13,7 @@ import Classes from './screens/Classes';
 import Services from './screens/Services';
 import Team from './screens/Team';
 import Contact from './screens/Contact';
+import NotFound from './screens/NotFound';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='services' element={<Services />} />
         <Route path='team' element={<Team />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
       </Route>
     )
   );

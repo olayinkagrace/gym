@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import background from '../assets/images/gallery-5.jpg'
 import background2 from '../assets/images/gallery-2.jpg'
 import Navbar from '../components/Navbar'
+import Timetable from '../components/Timetable'
 
 export default function Classes() {
   return (
@@ -126,7 +127,9 @@ export default function Classes() {
             </div>
           </div>
         </div>
-
+      </section>
+      <section className='bg-neutral-900 px-20 pb-5 '>
+        <Timetable />
       </section>
     </main>
   )
